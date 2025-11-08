@@ -19,4 +19,14 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    'bg-purple-100',
+    'bg-green-100',
+    'bg-blue-100',
+    'bg-orange-100',
+    'text-purple-600',
+    'text-green-600',
+    'text-blue-600',
+    'text-orange-600',
+  ],
 }

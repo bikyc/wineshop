@@ -4,9 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 
-// REAL PAGE COMPONENTS
 import Dashboard from './components/Dashboard';
-import Sales from './components/Sales';
+import Sales from './components/sales/Sales';   // Correct import
 import WholesaleOrders from './components/WholesaleOrders';
 import Reports from './components/Reports';
 import InventoryManager from './components/InventoryManager';
@@ -21,11 +20,12 @@ import Stores from './components/Stores';
 import StockTransfer from './components/StockTransfer';
 import StockRequest from './components/StockRequest';
 import PurchaseOrder from './components/PurchaseOrder';
+import Billing from './components/billing/Billing';
 
 export default function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [expanded, setExpanded] = useState(false);
-  const sidebarWidth = expanded ? 16 : 5; // rem
+  const sidebarWidth = expanded ? 16 : 5;
 
   return (
     <div className="flex h-screen bg-gray-50">
@@ -60,6 +60,7 @@ export default function App() {
             <Route path="/stock-transfer" element={<StockTransfer />} />
             <Route path="/stock-request" element={<StockRequest />} />
             <Route path="/purchase-order" element={<PurchaseOrder />} />
+            <Route path="/billing" element={<Billing />} />
           </Routes>
         </main>
       </div>

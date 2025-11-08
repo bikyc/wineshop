@@ -1,37 +1,27 @@
-import { Bell, Search, Menu } from 'lucide-react'
+import { Package, DollarSign, ShoppingBag, Tag } from 'lucide-react';
 
-export default function Header({ toggleSidebar }) {
+export default function Stats() {
+  const stats = [
+    { label: 'Total Orders', value: 0, icon: Package, color: 'purple' },
+    { label: 'Payment Received', value: '₹0', icon: DollarSign, color: 'green' },
+    { label: 'Bottles Sold', value: 0, icon: ShoppingBag, color: 'blue' },
+    { label: 'Discount Given', value: '₹0', icon: Tag, color: 'orange' },
+  ];
+
   return (
-    <header className="bg-white shadow-sm border-b border-gray-200 px-4 md:px-6 py-4">
-      <div className="flex items-center justify-between">
-        <button onClick={toggleSidebar} className="lg:hidden">
-          <Menu className="w-6 h-6 text-gray-600" />
-        </button>
-
-        {/* <div className="flex-1 max-w-xl mx-4">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-            <input
-              type="text"
-              placeholder="Search wines, orders..."
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-wine-500"
-            />
-          </div>
-        </div>
-
-        <div className="flex items-center space-x-4">
-          <button className="relative p-2 text-gray-600 hover:bg-gray-100 rounded-full">
-            <Bell className="w-5 h-5" />
-            <span className="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
-          </button>
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-wine-600 rounded-full flex items-center justify-center text-white font-semibold">
-              A
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {stats.map((card, i) => (
+        <div key={i} className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+          <div className="flex items-center justify-between mb-2">
+            <p className="text-sm text-gray-600">{card.label}</p>
+            <div className={`p-2 rounded-lg bg-${card.color}-100`}>
+              <card.icon className={`w-5 h-5 text-${card.color}-600`} />
             </div>
-            <span className="hidden md:block text-sm font-medium">Admin</span>
           </div>
-        </div> */}
-      </div>
-    </header>
-  )
+          <p className="text-2xl font-bold text-gray-800">{card.value}</p>
+          <p className="text-xs text-gray-500">This month</p>
+        </div>
+      ))}
+    </div>
+  );
 }
