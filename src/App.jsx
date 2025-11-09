@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 
 import Dashboard from './components/Dashboard';
-import Sales from './components/sales/Sales';   // Correct import
+import Sales from './components/sales/Sales';
 import WholesaleOrders from './components/WholesaleOrders';
 import Reports from './components/Reports';
 import InventoryManager from './components/InventoryManager';

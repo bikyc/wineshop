@@ -13,7 +13,7 @@ export default function SalesHeader() {
       </div>
 
       <button
-        onClick={() => navigate('/billing')}   // ONLY ON CLICK
+        onClick={() => navigate('/billing')}
         className="flex items-center gap-2 bg-indigo-600 text-white px-5 py-2.5 rounded-lg hover:bg-indigo-700 transition shadow-md"
       >
         <Plus className="w-5 h-5" />
