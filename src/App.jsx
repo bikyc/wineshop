@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 
 import Dashboard from './components/Dashboard';
-import Sales from './components/sales/Sales';
+import Sales from '@/features/sales/components/Sales';
 import WholesaleOrders from './components/WholesaleOrders';
 import Reports from './components/Reports';
 import InventoryManager from './components/InventoryManager';
@@ -14,7 +14,7 @@ import Expenses from './components/Expenses';
 import StockVerification from './components/StockVerification';
 import Suppliers from './components/Suppliers';
 import Categories from './components/Categories';
-import Brands from './components/Brands';
+import Brands from '@/features/brands/components/Brands';
 import Customers from './components/Customers';
 import Stores from './components/Stores';
 import StockTransfer from './components/StockTransfer';
