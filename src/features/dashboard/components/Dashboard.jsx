@@ -1,6 +1,6 @@
-import Stats from '../components/Stats';
-import OrdersTable from '../components/OrdersTable';
-import SalesChart from '../components/SalesChart';
+import Stats from '@/features/stats/components/Stats';
+import OrdersTable from '@/features/orders/components/OrdersTable';
+import SalesChart from '@/features/sales/components/SalesChart';
 
 export default function Dashboard() {
   return (

@@ -4,23 +4,23 @@ import { Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 
-import Dashboard from './components/Dashboard';
+import Dashboard from '@/features/dashboard/components/Dashboard';
 import Sales from '@/features/sales/components/Sales';
-import WholesaleOrders from './components/WholesaleOrders';
-import Reports from './components/Reports';
-import InventoryManager from './components/InventoryManager';
-import Purchase from './components/Purchase';
-import Expenses from './components/Expenses';
-import StockVerification from './components/StockVerification';
-import Suppliers from './components/Suppliers';
-import Categories from './components/Categories';
+import WholesaleOrders from '@/features/wholesale/components/WholesaleOrders';
+import Reports from '@/features/reports/components/Reports';
+import InventoryManager from '@/features/inventory/components/InventoryManager';
+import Purchase from '@/features/purchase/components/Purchase';
+import Expenses from '@/features/expenses/components/Expenses';
+import StockVerification from '@/features/stock-verification/components/StockVerification';
+import Suppliers from '@/features/suppliers/components/Suppliers';
+import Categories from '@/features/categories/components/Categories';
 import Brands from '@/features/brands/components/Brands';
-import Customers from './components/Customers';
-import Stores from './components/Stores';
-import StockTransfer from './components/StockTransfer';
-import StockRequest from './components/StockRequest';
-import PurchaseOrder from './components/PurchaseOrder';
-import Billing from './components/billing/Billing';
+import Customers from '@/features/customers/components/Customers';
+import Stores from '@/features/stores/components/Stores';
+import StockTransfer from '@/features/stock-transfer/components/StockTransfer';
+import StockRequest from '@/features/stock-request/components/StockRequest';
+import PurchaseOrder from '@/features/purchase-order/components/PurchaseOrder';
+import Billing from '@/features/billing/components/Billing';
 
 export default function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
